@@ -1,7 +1,5 @@
-
 import SocialMedia from "@/components/SocialMedia";
 import { Circle1, Circle2, Header, Welcome } from "@/styles/Index.style";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
