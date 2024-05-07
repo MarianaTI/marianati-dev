@@ -6,7 +6,6 @@ import {
   Menu,
   NavStyled,
 } from "./index.style";
-import { faBarChart } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {

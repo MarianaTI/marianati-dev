@@ -10,6 +10,7 @@ export const NavStyled = styled.nav`
   height: 72px;
   padding: 0 88px;
   width: 100%;
+  z-index: 1000;
   @media (max-width: 740px) {
     flex-direction: column;
     align-items: start;
