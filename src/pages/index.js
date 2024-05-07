@@ -1,9 +1,10 @@
 import SocialMedia from "@/components/SocialMedia";
+import ToolSlider from "@/components/ToolSlider";
 import { Circle1, Circle2, Header, Welcome } from "@/styles/Index.style";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header>
         <Circle1 />
         <Circle2 />
@@ -17,6 +18,7 @@ export default function Home() {
           <SocialMedia/>
         </Welcome>
       </Header>
-    </>
+      <ToolSlider/>
+    </div>
   );
 }

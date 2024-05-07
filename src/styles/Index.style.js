@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Header = styled.header`
-  height: 700px;
+  height: 730px;
 `;
 
 const BackgroundCircle = styled.div`
