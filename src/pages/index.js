@@ -1,16 +1,11 @@
-<<<<<<< Updated upstream
 
-=======
 import SocialMedia from "@/components/SocialMedia";
 import { Circle1, Circle2, Header, Welcome } from "@/styles/Index.style";
->>>>>>> Stashed changes
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
-<<<<<<< Updated upstream
-      <nav>Navbar</nav>
-=======
       <Header>
         <Circle1 />
         <Circle2 />
@@ -24,7 +19,6 @@ export default function Home() {
           <SocialMedia/>
         </Welcome>
       </Header>
->>>>>>> Stashed changes
     </>
   );
 }
