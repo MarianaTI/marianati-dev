@@ -1,10 +1,27 @@
 import SocialMedia from "@/components/SocialMedia";
 import ToolSlider from "@/components/ToolSlider";
-import { Circle1, Circle2, Header, Welcome } from "@/styles/Index.style";
+import {
+  AboutMe,
+  Article,
+  Articles,
+  Circle1,
+  Circle2,
+  Contact,
+  Container,
+  Flower,
+  Footer,
+  GridContainer,
+  Header,
+  ImageContainer,
+  Main,
+  Rainbow,
+  Welcome,
+} from "@/styles/Index.style";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <Container>
       <Header>
         <Circle1 />
         <Circle2 />
@@ -15,10 +32,55 @@ export default function Home() {
             </h1>
           </div>
           <span>Front End Developer | UX/UI</span>
-          <SocialMedia/>
+          <SocialMedia />
         </Welcome>
       </Header>
-      <ToolSlider/>
-    </div>
+      <ToolSlider />
+      <Main>
+        <GridContainer>
+          <AboutMe>
+            <h2>Sobre mí</h2>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </span>
+          </AboutMe>
+        </GridContainer>
+        <GridContainer>
+          <Image src="/img/image.png" width={400} height={400} />
+        </GridContainer>
+      </Main>
+      <Article>
+        <h3>Proyectos</h3>
+        <Articles>
+          <span>Front End Developer</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia.</span>
+        </Articles>
+        <Articles>
+          <span>UX/UI</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia.</span>
+        </Articles>
+      </Article>
+      <Footer>
+        <Flower>
+          <Image src="/img/flowers.png" width={250} height={250} />
+        </Flower>
+        <Contact>
+          <h4>¡Gracias por visitar!</h4>
+          <span className="contactme-text">Contáctame</span>
+          <span>marianatrujillo27@hotmail.com</span>
+          <span>(+52) 999 273 7423</span>
+          <span>Mérida, Yucatán</span>
+        </Contact>
+        <Rainbow>
+          <Image src="/img/rainbow.png" width={250} height={250} />
+        </Rainbow>
+      </Footer>
+    </Container>
   );
 }
