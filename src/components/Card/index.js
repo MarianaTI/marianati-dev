@@ -1,9 +1,9 @@
 import React from "react";
 import { CardStyled, Content } from "./index.style";
 
-const Card = ({ image, title, description, alt }) => {
+const Card = ({ image, title, description, alt, onClick }) => {
   return (
-    <CardStyled>
+    <CardStyled onClick={onClick}>
       <Content>
         <img src={image} alt={alt}/>
         <h1>{title}</h1>

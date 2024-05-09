@@ -14,15 +14,23 @@ import {
   Footer,
   GridContainer,
   Header,
-  ImageContainer,
   Main,
   Rainbow,
   Welcome,
 } from "@/styles/Index.style";
 import Image from "next/image";
 import { frontend, ui } from "../../constants";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
+  const navigateToProject = (slug) => {
+    return router.push({
+      pathname: '/[projectSlug]',
+      query: { projectSlug: slug },
+    })
+  }
   return (
     <Container>
       <Header>
@@ -76,6 +84,7 @@ export default function Home() {
                 alt={project.slug}
                 title={project.name}
                 description={project.description}
+                onClick={() => navigateToProject(project.slug)}
               />
             ))}
           </CardContainer>
@@ -96,6 +105,7 @@ export default function Home() {
                 alt={project.slug}
                 title={project.name}
                 description={project.description}
+                onClick={() => navigateToProject(project.slug)}
               />
             ))}
           </CardContainer>
