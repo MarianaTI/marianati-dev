@@ -121,71 +121,77 @@ export const tools = [
   },
 ];
 
-export const frontend = [
-  {
-    slug: "ganado-link",
-    image: "/img/ganadolink-image.png",
-    name: "GanadoLink",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "libreria",
-    image: "/img/ganadolink-image.png",
-    name: "Librería",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "maestro-enarm",
-    image: "/img/ganadolink-image.png",
-    name: "Maestro ENARM",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "quick-2-go",
-    image: "/img/ganadolink-image.png",
-    name: "Quick2Go",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-];
+export const frontend = {
+  theme: "Front End Developer",
+  projects: [
+    {
+      slug: "ganado-link",
+      image: "/img/ganadolink-image.png",
+      name: "GanadoLink",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "libreria",
+      image: "/img/ganadolink-image.png",
+      name: "Librería",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "maestro-enarm",
+      image: "/img/ganadolink-image.png",
+      name: "Maestro ENARM",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "quick-2-go",
+      image: "/img/ganadolink-image.png",
+      name: "Quick2Go",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+  ]
+};
 
-export const ui = [
-  {
-    slug: "ganado-link",
-    image: "/img/ganadolink-image.png",
-    name: "GanadoLink",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "libreria",
-    image: "/img/ganadolink-image.png",
-    name: "Librería",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "maestro-enarm",
-    image: "/img/ganadolink-image.png",
-    name: "Maestro ENARM",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "quick-2-go",
-    image: "/img/ganadolink-image.png",
-    name: "Quick2Go",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    slug: "solema",
-    image: "/img/ganadolink-image.png",
-    name: "Solema",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-];
+export const ui = {
+  theme: "UX/UI",
+  projects: [
+    {
+      slug: "ganado-link",
+      image: "/img/ganadolink-image.png",
+      name: "GanadoLink",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "libreria",
+      image: "/img/ganadolink-image.png",
+      name: "Librería",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "maestro-enarm",
+      image: "/img/ganadolink-image.png",
+      name: "Maestro ENARM",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "quick-2-go",
+      image: "/img/ganadolink-image.png",
+      name: "Quick2Go",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      slug: "solema",
+      image: "/img/ganadolink-image.png",
+      name: "Solema",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+  ]
+};

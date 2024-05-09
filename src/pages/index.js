@@ -77,7 +77,7 @@ export default function Home() {
             officia.
           </span>
           <CardContainer>
-            {frontend.map((project, index) => (
+            {frontend.projects.map((project, index) => (
               <Card
                 key={index}
                 image={project.image}
@@ -98,14 +98,13 @@ export default function Home() {
             officia.
           </span>
           <CardContainer>
-            {ui.map((project, index) => (
+            {ui.projects.map((project, index) => (
               <Card
                 key={index}
                 image={project.image}
                 alt={project.slug}
                 title={project.name}
                 description={project.description}
-                onClick={() => navigateToProject(project.slug)}
               />
             ))}
           </CardContainer>
