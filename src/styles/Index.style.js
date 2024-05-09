@@ -75,6 +75,13 @@ export const Article = styled.article`
     font-size: 48px;
     padding: 32px;
   }
+  .title {
+    font-size: 32px;
+    color: #181818;
+  }
+  .description {
+    color: rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export const Articles = styled.div`
@@ -147,4 +154,9 @@ export const Rainbow = styled.div`
   justify-content: end;
   padding-right: 100px;
   /* transform: rotate(-15deg); */
+`;
+
+export const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 `;

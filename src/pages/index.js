@@ -1,9 +1,11 @@
+import Card from "@/components/Card";
 import SocialMedia from "@/components/SocialMedia";
 import ToolSlider from "@/components/ToolSlider";
 import {
   AboutMe,
   Article,
   Articles,
+  CardContainer,
   Circle1,
   Circle2,
   Contact,
@@ -18,6 +20,7 @@ import {
   Welcome,
 } from "@/styles/Index.style";
 import Image from "next/image";
+import { frontend, ui } from "../../constants";
 
 export default function Home() {
   return (
@@ -52,23 +55,55 @@ export default function Home() {
           </AboutMe>
         </GridContainer>
         <GridContainer>
-          <Image src="/img/image.png" width={400} height={400} />
+          <Image src="/img/image.png" width={400} height={400} alt="about-me"/>
         </GridContainer>
       </Main>
       <Article>
         <h3>Proyectos</h3>
         <Articles>
-          <span>Front End Developer</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia.</span>
+          <span className="title">Front End Developer</span>
+          <span className="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia.
+          </span>
+          <CardContainer>
+            {frontend.map((project, index) => (
+              <Card
+                key={index}
+                image={project.image}
+                alt={project.slug}
+                title={project.name}
+                description={project.description}
+              />
+            ))}
+          </CardContainer>
         </Articles>
         <Articles>
-          <span>UX/UI</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia.</span>
+          <span className="title">UX/UI</span>
+          <span className="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia.
+          </span>
+          <CardContainer>
+            {ui.map((project, index) => (
+              <Card
+                key={index}
+                image={project.image}
+                alt={project.slug}
+                title={project.name}
+                description={project.description}
+              />
+            ))}
+          </CardContainer>
         </Articles>
       </Article>
       <Footer>
         <Flower>
-          <Image src="/img/flowers.png" width={250} height={250} />
+          <Image src="/img/flowers.png" width={250} height={250} alt="flowers"/>
         </Flower>
         <Contact>
           <h4>¡Gracias por visitar!</h4>
@@ -78,7 +113,7 @@ export default function Home() {
           <span>Mérida, Yucatán</span>
         </Contact>
         <Rainbow>
-          <Image src="/img/rainbow.png" width={250} height={250} />
+          <Image src="/img/rainbow.png" width={250} height={250}  alt="rainbow"/>
         </Rainbow>
       </Footer>
     </Container>
