@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   height: 96px;
   width: 100vw;
-  background-color: #c82f8d;
+  background-color: #FFE8C6;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -16,7 +16,7 @@ export const Content = styled.div`
   width: calc(150px * 20);
   & span {
     font-size: 16px;
-    color: #fff;
+    color: #D54B1A;
     font-weight: 500;
   }
   @keyframes scroll {

@@ -2,84 +2,72 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 72px);
 `;
 
 export const Header = styled.header`
-  height: 740px;
-  position: relative;
-  overflow: hidden;
-`;
-
-const BackgroundCircle = styled.div`
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(400px);
-`;
-
-export const Circle1 = styled(BackgroundCircle)`
-  position: sticky;
-  top: 380px;
-  left: 78%;
-  width: 300px;
-  height: 300px;
-  background-color: #bc2b9e;
-`;
-
-export const Circle2 = styled(BackgroundCircle)`
-  position: absolute;
-  width: 286px;
-  height: 287px;
-  background-color: #b6aef2;
-  top: 100px;
-  left: 200px;
-  z-index: 1;
+  height: 850px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 `;
 
 export const Welcome = styled.div`
   display: flex;
+  text-align: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
   height: 100%;
-  padding-left: 100px;
-  position: absolute;
-  z-index: 2;
+  gap: 8px;
   & h1 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-size: 64px;
+    color: #181818;
+    font-family: "Spicy Rice", serif;
+    font-size: 72px;
   }
   & span {
+    color: #181818;
     font-family: "Poppins", sans-serif;
-    font-size: 28px;
-  }
-  .pinkcolor {
-    color: #c82f8d;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-size: 64px;
+    font-size: 24px;
+    padding-bottom: 8px;
   }
 `;
 
+export const Flower = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+`;
+
+export const Lines = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  align-items: flex-end;
+`;
+
 export const Main = styled.main`
-  height: 900px;
+  height: 650px;
   display: grid;
+  background-color: #fbf6ec;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 `;
 
 export const Article = styled.article`
-  padding: 48px;
+  margin: 300px 0px;
+  padding: 64px;
+  font-family: "Spicy Rice", serif;
   & h3 {
-    font-family: "Libre Baskerville", serif;
     text-align: center;
-    font-size: 48px;
-    padding: 32px;
+    font-size: 64px;
+    color: #908A35;
+    padding: 16px;
   }
   .title {
     font-size: 32px;
     color: #181818;
   }
   .description {
+    font-family: "Poppins", sans-serif;
     color: rgba(0, 0, 0, 0.5);
   }
 `;
@@ -87,21 +75,23 @@ export const Article = styled.article`
 export const Articles = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 32px;
 `;
 
 export const AboutMe = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 700px;
   gap: 16px;
   padding: 32px;
   & h2 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-size: 48px;
+    font-family: "Spicy Rice", serif;
+    font-size: 64px;
+    color: #e37166;
+  }
+  & span {
+    width: 480px;
   }
 `;
 
@@ -112,10 +102,11 @@ export const GridContainer = styled.div`
 `;
 
 export const Footer = styled.footer`
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 8px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ca3c4a;
 `;
 
 export const Contact = styled.div`
@@ -123,37 +114,24 @@ export const Contact = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  color: #fff4ed;
+  padding: 32px;
   & h4 {
-    font-family: "Caveat Brush", cursive;
-    font-weight: 700;
+    font-family: "Spicy Rice", serif;
+    text-align: center;
     font-size: 64px;
-    color: #c82f8d;
-    margin-bottom: 8px;
+    padding-bottom: 16px;
   }
   .contactme-text {
     font-size: 24px;
-    font-weight: 500;
-    margin: 8px 0;
+    font-weight: 600;
+    padding-bottom: 8px;
   }
   & span {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
+    font-weight: 300;
   }
-`;
-
-export const Flower = styled.div`
-  display: flex;
-  align-items: end;
-  padding-left: 150px;
-  /* transform: rotate(25deg); */
-`;
-
-export const Rainbow = styled.div`
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  padding-right: 100px;
-  /* transform: rotate(-15deg); */
 `;
 
 export const CardContainer = styled.div`

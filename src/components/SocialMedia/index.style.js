@@ -12,5 +12,5 @@ export const Circle = styled.a`
   height: 40px;
   width: 40px;
   border-radius: 100px;
-  background-color: rgba(251, 210, 238, 0.5);
+  background-color: #F8E9CB;
 `;
