@@ -110,7 +110,7 @@ export default function Home() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia.
             </span>
-            {/* <CardContainer>
+            <CardContainer>
               {ui.projects.map((project, index) => (
                 <Card
                   key={index}
@@ -120,7 +120,7 @@ export default function Home() {
                   description={project.description}
                 />
               ))}
-            </CardContainer> */}
+            </CardContainer>
           </Articles>
         </Article>
       <div>

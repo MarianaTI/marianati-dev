@@ -53,7 +53,7 @@ export const Main = styled.main`
 `;
 
 export const Article = styled.article`
-  margin: 300px 0px;
+  margin: 200px 100px;
   padding: 64px;
   font-family: "Spicy Rice", serif;
   & h3 {
