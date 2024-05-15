@@ -4,19 +4,19 @@ export const CardStyled = styled.div`
   cursor: pointer;
   width: 300px;
   margin: 80px 0px;
-
+  background-color: #fff5f1;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 0 16px 16px 16px;
   gap: 8px;
   & img {
-    width: 230px;
-    height: 230px;
-    border: 10px solid #f8e9cb;
+    padding: 16px;
+    width: 300px;
+    height: 250px;
   }
   & h1 {
     color: #181818;

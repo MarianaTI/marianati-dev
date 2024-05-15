@@ -63,7 +63,7 @@ export const Article = styled.article`
     padding: 16px;
   }
   .title {
-    font-size: 32px;
+    font-size: 40px;
     color: #181818;
   }
   .description {

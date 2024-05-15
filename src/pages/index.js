@@ -6,8 +6,6 @@ import {
   Article,
   Articles,
   CardContainer,
-  Circle1,
-  Circle2,
   Contact,
   Container,
   Flower,
@@ -16,11 +14,10 @@ import {
   Header,
   Lines,
   Main,
-  Rainbow,
   Welcome,
 } from "@/styles/Index.style";
 import Image from "next/image";
-import { frontend, ui } from "../../constants";
+import { projects } from "../../constants";
 import { useRouter } from "next/router";
 
 export default function Home() {
@@ -84,30 +81,15 @@ export default function Home() {
       <Article>
         <h3>Proyectos</h3>
         <Articles>
-          <span className="title">Front End Developer</span>
           <CardContainer>
-            {frontend.projects.map((project, index) => (
+            {projects.map((project, index) => (
               <Card
                 key={index}
                 image={project.image}
                 alt={project.slug}
                 title={project.name}
-                description={project.description}
+                description={project.name}
                 onClick={() => navigateToProject(project.slug)}
-              />
-            ))}
-          </CardContainer>
-        </Articles>
-        <Articles>
-          <span className="title">UX/UI</span>
-          <CardContainer>
-            {ui.projects.map((project, index) => (
-              <Card
-                key={index}
-                image={project.image}
-                alt={project.slug}
-                title={project.name}
-                description={project.description}
               />
             ))}
           </CardContainer>
