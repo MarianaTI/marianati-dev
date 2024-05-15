@@ -66,13 +66,14 @@ export default function Home() {
               mejoren la forma en que las personas interactúan con la
               tecnología.
             </span>
+            <span>- Mariana</span>
           </AboutMe>
         </GridContainer>
         <GridContainer>
           <Image
             src="/img/aboutme-image.png"
-            width={400}
-            height={400}
+            width={450}
+            height={450}
             alt="about-me"
           />
         </GridContainer>

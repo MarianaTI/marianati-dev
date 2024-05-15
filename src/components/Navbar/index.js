@@ -29,7 +29,7 @@ const Navbar = () => {
           <LinkStyled href="#">Sobre mí</LinkStyled>
         </li>
         <li>
-          <LinkStyled href="#">Currículum</LinkStyled>
+          <LinkStyled href="https://drive.google.com/file/d/18AgFOub-gewVSGCJRye_3BuULPcHH6Lv/view?usp=drive_link" target="_blank">Currículum</LinkStyled>
         </li>
       </ul>
     </NavStyled>
