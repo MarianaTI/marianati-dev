@@ -53,13 +53,13 @@ export const Main = styled.main`
 `;
 
 export const Article = styled.article`
-  margin: 200px 100px;
+  margin: 180px 100px 0px 100px;
   padding: 64px;
   font-family: "Spicy Rice", serif;
   & h3 {
     text-align: center;
     font-size: 64px;
-    color: #908A35;
+    color: #908a35;
     padding: 16px;
   }
   .title {
@@ -75,6 +75,7 @@ export const Article = styled.article`
 export const Articles = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 80px 0;
 `;
 
 export const AboutMe = styled.div`
@@ -102,11 +103,12 @@ export const GridContainer = styled.div`
 `;
 
 export const Footer = styled.footer`
-  height: 350px;
+  height: 300px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   background-color: #ca3c4a;
+  margin: 0;
 `;
 
 export const Contact = styled.div`

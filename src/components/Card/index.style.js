@@ -4,7 +4,7 @@ export const CardStyled = styled.div`
   cursor: pointer;
   width: 300px;
   margin: 80px 0px;
-  border: 10px solid #f8e9cb;
+
 `;
 
 export const Content = styled.div`
@@ -16,6 +16,7 @@ export const Content = styled.div`
   & img {
     width: 230px;
     height: 230px;
+    border: 10px solid #f8e9cb;
   }
   & h1 {
     color: #181818;

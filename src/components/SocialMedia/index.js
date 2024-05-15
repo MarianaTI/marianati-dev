@@ -8,7 +8,7 @@ const app = [
     image: "/img/dribbble.png",
   },
   {
-    link: "www.linkedin.com/in/mariana-trujillo-islas-026501284",
+    link: "https://www.linkedin.com/in/mariana-trujillo-islas-026501284/",
     image: "/img/linkedin.png",
   },
   {

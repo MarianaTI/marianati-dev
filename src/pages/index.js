@@ -59,13 +59,15 @@ export default function Home() {
           <AboutMe>
             <h2>Sobre mí</h2>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Soy una apasionada programadora que se especializa en diseño y
+              desarrollo frontend de aplicaciones web y móviles, con un enfoque
+              particular en UX/UI. Me encanta crear experiencias digitales
+              atractivas y funcionales para los usuarios, combinando habilidades
+              técnicas con creatividad para producir interfaces intuitivas y
+              visualmente impactantes. Mi pasión por el diseño y la programación
+              me impulsa a buscar constantemente soluciones innovadoras que
+              mejoren la forma en que las personas interactúan con la
+              tecnología.
             </span>
           </AboutMe>
         </GridContainer>
@@ -80,62 +82,49 @@ export default function Home() {
       </Main>
       <img src="/img/wave-aboutme.png" width="100%" height="320px" />
       <Article>
-          <h3>Proyectos</h3>
-          <Articles>
-            <span className="title">Front End Developer</span>
-            <span className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia.
-            </span>
-            <CardContainer>
-              {frontend.projects.map((project, index) => (
-                <Card
-                  key={index}
-                  image={project.image}
-                  alt={project.slug}
-                  title={project.name}
-                  description={project.description}
-                  onClick={() => navigateToProject(project.slug)}
-                />
-              ))}
-            </CardContainer>
-          </Articles>
-          <Articles>
-            <span className="title">UX/UI</span>
-            <span className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia.
-            </span>
-            <CardContainer>
-              {ui.projects.map((project, index) => (
-                <Card
-                  key={index}
-                  image={project.image}
-                  alt={project.slug}
-                  title={project.name}
-                  description={project.description}
-                />
-              ))}
-            </CardContainer>
-          </Articles>
-        </Article>
+        <h3>Proyectos</h3>
+        <Articles>
+          <span className="title">Front End Developer</span>
+          <CardContainer>
+            {frontend.projects.map((project, index) => (
+              <Card
+                key={index}
+                image={project.image}
+                alt={project.slug}
+                title={project.name}
+                description={project.description}
+                onClick={() => navigateToProject(project.slug)}
+              />
+            ))}
+          </CardContainer>
+        </Articles>
+        <Articles>
+          <span className="title">UX/UI</span>
+          <CardContainer>
+            {ui.projects.map((project, index) => (
+              <Card
+                key={index}
+                image={project.image}
+                alt={project.slug}
+                title={project.name}
+                description={project.description}
+              />
+            ))}
+          </CardContainer>
+        </Articles>
+      </Article>
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          style={{ height: "100% ", width: "100%" }}
+          viewBox="0 0 1440 250"
+          style={{ display: "block", height: "100%", width: "100%" }}
         >
           <path
-            fill="#f3f4f5"
-            fill-opacity="1"
+            fill="#ca3c4a"
             d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,122.7C1120,85,1280,75,1360,69.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-            style={{ stroke: "none", fill: "#CA3C4A" }}
           ></path>
         </svg>
+
         <Footer>
           <Contact>
             <h4>¡Gracias por visitar!</h4>
