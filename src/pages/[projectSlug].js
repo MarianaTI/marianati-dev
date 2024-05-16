@@ -50,7 +50,7 @@ export default function View() {
           </div>
         </ProjectInformation>
         <Images>
-          <div className="image2" />
+          <img src={project.image}/>
         </Images>
       </GridContainer>
     </div>

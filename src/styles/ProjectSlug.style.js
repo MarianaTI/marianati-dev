@@ -31,15 +31,9 @@ export const Images = styled.div`
   height: calc(100vh - 72px);
   padding: 40px;
   gap: 40px;
-  .image1 {
-    background-color: rgba(246, 151, 220, 1);
-    width: auto;
-    height: 50%;
-    border-radius: 25px;
-  }
-  .image2 {
-    background-color: rgba(187, 80, 237, 1);
-    width: auto;
+  & img{
+    object-fit: cover;
+    width: 100%;
     height: 100%;
     border-radius: 25px;
   }
@@ -77,8 +71,7 @@ export const ButtonStyled = styled.button`
     transition-duration: 0.4s;
     border-radius: 30px;
   }
-  &:hover
-  .text {
+  &:hover .text {
     opacity: 1;
     transition-duration: 0.4s;
   }
