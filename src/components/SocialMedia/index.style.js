@@ -15,7 +15,7 @@ export const Circle = styled.a`
   background-color: #f8e9cb;
   transition: all 0.3s ease-in-out;
   font-family: "Dosis", sans-serif;
-  box-shadow: 0 5px 15px -5px rgba(248, 233, 203, 1);
+  box-shadow: 0 5px 15px -5px #eaa58d;
   &:hover{
     transform: translateY(3px);
   box-shadow: none;

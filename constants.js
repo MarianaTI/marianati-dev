@@ -171,7 +171,7 @@ export const projects = [
   {
     slug: "maestro-enarm",
     image: "/img/maestroenarm-web.png",
-    name: "Maestro ENARM",
+    name: "Maestro ENARM Academy",
     description:
       "Maestro ENARM es una plataforma diseñada específicamente para apoyar a estudiantes de medicina que se están preparando para el examen ENARM. Ofrece una amplia gama de recursos de estudio, que incluyen audiolibros, libros y videos, cuidadosamente seleccionados para cubrir los temas relevantes del examen.\n Además de proporcionar acceso a este valioso material de estudio, Maestro ENARM facilita el proceso de adquisición al permitir a los usuarios realizar compras directamente a través de la plataforma utilizando el sistema de pago seguro de Stripe. Con Maestro ENARM, los estudiantes pueden acceder fácilmente al contenido que necesitan para prepararse de manera efectiva y tener la mejor oportunidad posible de éxito en el examen ENARM.",
     tools: [
@@ -207,9 +207,9 @@ export const projects = [
       { name: "Flutter" },
     ],
     links: [
-      { link: "https://github.com/Moreno2825/quick2goNextjs/tree/main" },
+      { link: "https://github.com/Moreno2825/quick2goNextjs/tree/main", name: "Web:" },
       {
-        link: "https://github.com/Moreno2825/app_quick2go/tree/main",
+        link: "https://github.com/Moreno2825/app_quick2go/tree/main", name: "Movil:",
       },
     ],
   },

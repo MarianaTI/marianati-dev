@@ -72,8 +72,8 @@ export default function Home() {
         <GridContainer>
           <Image
             src="/img/aboutme-image.png"
-            width={450}
-            height={450}
+            width={500}
+            height={500}
             alt="about-me"
           />
         </GridContainer>
